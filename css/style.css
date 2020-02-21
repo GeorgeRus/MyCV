@@ -1,0 +1,37 @@
+.CONTAINER{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.presentation{
+    width: 100%;
+}
+
+.about-me{
+    margin: 5rem 14rem;
+}
+
+.my-photo img{
+    width: 300px;
+    height: 300px;
+    border: 10px solid black;
+    border-radius: 50%;
+}
+
+.message{
+    background-color: aqua;
+}
+
+.footer-items{
+    background-color: black;
+    margin: 0rem;
+}
+
+.footer-items a{
+    padding: 2rem;
+}
