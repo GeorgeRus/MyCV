@@ -1,0 +1,129 @@
+
+.cv-content{
+    margin: 15rem 0rem;
+    box-shadow: 5px 5px 10px 10px #E9E7E6;
+    line-height: 2rem;
+}
+
+.cv-left-content{
+    background-color: #6D7070;
+    color: blanchedalmond;
+    font-size: 2rem;
+}
+
+.list-item-content {
+    margin-left: 2rem;
+    display: none;
+}
+
+.cv-left-text h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.cv-left-subtext p{
+    padding: 1rem;
+}
+
+.cv-left-subtext a{
+    text-decoration: none;
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+
+.cv-left-subtext a:visited{
+    color: blanchedalmond;
+}
+
+.cv-right-content{
+    background-color: #BFCBC8;
+}       
+
+.period {
+    font-style: italic;
+    float: right;
+}
+
+.cv-list-item{
+    list-style-type: none;
+}
+
+.cv-list-item h3{
+    font-size: 3rem;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.cv-list-item h3:hover{
+    cursor: pointer;
+}
+
+.list-item-content{
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.list-item-content h4{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* .list-item-content span{
+    padding-left: 2rem;
+} */
+
+.progress{
+    width: 25rem;
+}
+
+.show{
+    display: block;
+}
+
+.toggle-down {
+    animation: toggledown 0.9s ease-out;
+}
+    
+@keyframes toggledown {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.changeColor {
+    color: tomato;
+}
+
+
+/*media queries*/
+@media only screen and (max-width: 600px){
+    .cv-content{
+        margin: 1rem 0.5rem;
+    }
+
+    .cv-left-text h1{
+        font-size: 1.2rem;
+    }
+
+    .cv-left-content{
+        font-size: 1rem;
+    }
+
+    .list-item-content{
+        padding-left: 0rem;
+    }
+
+    .cv-list{
+        padding-left: 0rem;
+    }
+
+    .period{
+        float: none;
+    }
+}
