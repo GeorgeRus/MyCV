@@ -1,0 +1,66 @@
+.form-message{
+    display: none;
+}
+
+.form-container{
+    margin: 0rem;
+}
+
+.form-element{
+    width: 50rem;
+    margin: 10rem;
+    background-color:#D0D0D0;
+    box-shadow: 5px 5px 10px 10px #69727C;
+}
+
+.form-element h4, .form-element p{
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+
+.form-element p{
+    color: red;
+    font-size: 2rem;
+}
+
+.fa-envelope-open-text{
+    padding-right: 1rem;
+}
+
+.form-element input, .form-element textarea{
+    width: 80%;
+    height: 3.5rem;
+    margin-top: 2rem;
+    padding: 0.8rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.form-element textarea{
+    height: 10rem;
+    color: gray;
+}
+
+.error-message{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+input[type="submit"]{
+    width: 20%;
+    margin-bottom: 2rem;
+    background-color: tomato;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    color: blanchedalmond;
+    font-weight: bold;
+}
