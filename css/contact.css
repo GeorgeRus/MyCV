@@ -47,11 +47,11 @@
     color: gray;
 }
 
-.error-message{
+.hide-message{
     display: none;
 }
 
-.show{
+.show-submit-message{
     display: block;
 }
 
