@@ -9,12 +9,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" defer></script>
+    <link rel="stylesheet" href="../css/personal.css">
 </head>
 <body>
     <div class="CONTAINER">
@@ -38,13 +33,48 @@
                         <a class="nav-link" href="contact.html">Contact</a> 
                     </li>
                 </ul>
-                <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
-                    <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-facebook-f"></i></a> </li>
-                    <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-twitter"></i></i></a> </li>
-                    <li class="nav-item"><a class="nav-link" href=""><i class="fab fa-linkedin-in"></i></i></i></a> </li>
-                </ul>
             </div>
         </nav>
+
+        <div class="CONTAINER">
+            <section>
+                <div class="row projects-container col-md-12 d-flex flex-row justify-content-around align-items-center">
+                    <div class="project col-md-3">
+                        <div class="card card-item" id="the-mover">
+                            <img class="card-img-top" src="../imagini/the-mover-project.jpg" alt="The mover">
+                            <div class="card-body">
+                                <h4 class="card-title">The mover</h4>
+                                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="project col-md-3">
+                        <div class="card card-item">
+                            <img class="card-img-top" src="../imagini/booklist-project.jpg" alt="Booklist App">
+                            <div class="card-body">
+                                <h4 class="card-title">Booklist App</h4>
+                                <p class="card-text">Some example text some example text. John Doe is an architect and engineer. Lorem ipsum dolor sit amet.</p>
+                                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#project-modal">See more...</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="project col-md-3">
+                        <div class="card card-item" id="calculator">
+                            <img class="card-img-top" src="../imagini/calculator-project.jpg" alt="Calculator">
+                            <div class="card-body">
+                                <h4 class="card-title">Calculator</h4>
+                                <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            
 
         <button class="contacts go-to-top-button">Go to top</button>
 
@@ -63,5 +93,6 @@
             </div>
         </footer>
     </div>
+    <script src="../javascript/index.js"></script>
 </body>
 </html>

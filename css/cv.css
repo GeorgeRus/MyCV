@@ -41,6 +41,12 @@
     background-color: #BFCBC8;
 }       
 
+.show-keywords{
+    width: 20rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
 .period {
     font-style: italic;
     float: right;
@@ -71,12 +77,25 @@
     font-weight: bold;
 }
 
-/* .list-item-content span{
-    padding-left: 2rem;
-} */
-
 .progress{
-    width: 25rem;
+    height: 1.5rem;
+    width: 30rem;
+    margin-bottom: 1rem;
+}
+
+.language{
+    margin-bottom: 0.2rem;
+}
+
+.progress-bar{
+    background-color: turquoise;
+}
+
+.dynamic-progress-bar{
+    background-color: turquoise;
+    width: 0%;
+    color: white;
+    text-align: center;
 }
 
 .show{
@@ -127,3 +146,5 @@
         float: none;
     }
 }
+
+/*skills*/

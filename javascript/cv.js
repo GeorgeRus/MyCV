@@ -1,11 +1,11 @@
 const cvListItem = document.getElementsByClassName("cv-list-item");
-// const highlightButton = document.getElementsByClassName("highlight")[0];
-// const listItemContent = document.getElementsByClassName("list-item-content")[0];
+const highlightButton = document.getElementsByClassName("show-keywords")[0];
+const keyword = document.getElementsByClassName("highlight");
 
 function toggleContent(){
     for(let i = 0; i < cvListItem.length; i++){
         const currentListItem = cvListItem[i];
-        currentListItem.addEventListener("click", () => {
+        currentListItem.children[0].addEventListener("click", () => {
             currentListItem.children[0].classList.toggle("changeColor");
             currentListItem.children[1].classList.toggle("show");
             currentListItem.children[2].classList.toggle("show");
@@ -13,16 +13,50 @@ function toggleContent(){
         })
     }
 };
-
 toggleContent();
 
-// function highlightText(text){
-//     let textFound = document.getElementsByTagName("span")[1];
-//     let textHTML = textFound.innerHTML;
-//     var index = textHTML.indexOf(text);
-//     if (index >= 0) { 
-//         textHTML = textHTML.substring(0, index) + "<span class='highlight'>" + textHTML.substring(index, index+text.length) + "</span>" + textHTML.substring(index + text.length);
-//         textFound.innerHTML = innerHTML;
-//     }
-// }
+/*show keywords*/
+function showKeywords(){
+    let keywords = Array.from(keyword);
+    keywords.forEach(word => {
+        word.style.backgroundColor = "tomato";
+        word.style.fontWeight = "900";
+    });
+}
+highlightButton.addEventListener("click", showKeywords);
+
+/*dynamic progress bar-skills*/
+function fillProgressBar(item, index){
+    const progressPercentage = {
+        0 : 90,
+        1 : 85,
+        2 : 80,
+        3 : 90
+    }
+
+    let actualProgress = 0;
+    if (actualProgress === 0) {
+        actualProgress = 1;
+        let progressElement = item;
+        let progressIncrement = 1;
+        let id = setInterval(frame, 100);
+        function frame() {
+            if (progressIncrement >= progressPercentage[index]) {
+                clearInterval(id);
+                actualProgress = 0;
+            }else {
+                progressIncrement++;
+                progressElement.style.width = progressIncrement + "%";
+                progressElement.innerHTML = progressIncrement + "%";
+            }
+        }
+    }
+}
+
+const progressItems = document.querySelectorAll(".dynamic-progress-bar");
+const progressItemsArray = [...progressItems];
+
+progressItemsArray.forEach((progressItem, index) => {
+    fillProgressBar(progressItem, index);
+})
 
