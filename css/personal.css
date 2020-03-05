@@ -1,11 +1,27 @@
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 .projects-container{
-    margin-top: 5rem;
+    width: 100%;
+    margin: 5rem 0rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 .card-item{
     width: 30rem;
     border-radius: 0.5rem;
+    background-color: rgba(225, 219, 219, 0.5);
     box-shadow: 5px 5px 10px 10px #E9E7E6;
+}
+
+.card-item:hover{
+    transform: scale(1.01);
+    box-shadow: 10px 10px 15px 15px #E9E7E6;
+    filter: grayscale(50%);
 }
 
 .card img{
@@ -14,11 +30,78 @@
     height: 30rem;
 }
 
-.card img:hover{
-    transform: scale(1.25);
+/*modals*/
+.modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
-#the-mover, #the-mover img{
-    width: 35rem;
+.modal-content{
+    width: 50%;
+    height: 55rem;
+    margin: auto;
+    padding: 20px;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    display: flex;
 }
 
+.modal h3{
+    color: turquoise;
+    border-bottom: 1px solid turquoise;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.modal img{
+    width: 100%;
+    height: 40rem;
+}
+
+.buttons-container{
+    align-self: center;
+}
+
+.buttons-container button{
+    margin: 2rem;
+}
+
+.link-to-git:hover{
+    text-decoration: none;
+}
+
+.link-to-git:visited{
+    color: turquoise;
+}
+
+.open-modal:hover{
+    transform: scale(1.05)!important;
+    background-color: grey;
+    color: turquoise;
+}
+
+.go-to-top-container{
+    display: flex;
+    justify-content: center;
+}
+
+.interests-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.interests{
+    display: flex;
+}
+
+.interests p{
+    padding: 2rem;
+}
