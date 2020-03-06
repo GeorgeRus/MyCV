@@ -5,14 +5,17 @@ const email = document.getElementById("email");
 const message = document.getElementById("message");
 const submitMessage = document.getElementsByClassName("submit-result-message")[0];
 const submitButton = document.getElementById("submit-btn");
+const contactItems = document.getElementsByClassName("contact-forms")[0];
 const URL = "https://formspree.io/xrgbelll";
 
 submitButton.addEventListener("click", (event) => {
     event.preventDefault();
     if(!firstName.value || !lastName.value || !email.value || !message.value){
         displaySubmitErrorMessage();
+        setTimeout(removeMessage, 3000);
     }else{
         displaySubmitSuccsesMessage();
+        setTimeout(removeMessage, 3000);
     }
 
     let userData = {
@@ -40,14 +43,16 @@ function sendEmail(URL, userData){
 
 function displaySubmitErrorMessage(){
     submitMessage.classList.remove("hide-message");
-    submitMessage.classList.add("show-dubmit-message");
+    submitMessage.classList.add("show-submit-message");
     submitMessage.innerHTML = "All fields must be completed!"
+    //contactItems.style.height = "480.6px";
 }
 
 function displaySubmitSuccsesMessage(){
     submitMessage.classList.add("show-submit-message");
     submitMessage.innerHTML = "Your message was sent!"
     submitMessage.style.color = "green";
+    //contactItems.style.height = "480.6px";
 }
 
 function clearFields(){
@@ -56,3 +61,13 @@ function clearFields(){
     email.value = "";
     message.value = "";
 }
+
+function removeMessage(){
+    submitMessage.classList.add("hide-message");
+    // if(formElement.clientHeight < 480.6){
+    //     contactItems.style.height = "42rem";
+    // }else{
+    //     contactItems.style.height = "";
+    // }
+}
+

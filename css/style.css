@@ -170,6 +170,10 @@ a:hover{
     border-radius: 2px;
 }
 
+.contacts-hidden{
+    visibility: hidden;
+}
+
 .contact{
     height: 5rem;
     visibility: hidden;

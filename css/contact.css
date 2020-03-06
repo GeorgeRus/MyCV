@@ -8,7 +8,7 @@
 
 .form-element{
     width: 50rem;
-    margin: 10rem;
+    margin: 4.5rem;
     background-color:#D0D0D0;
     box-shadow: 5px 5px 10px 10px #69727C;
 }
@@ -59,4 +59,55 @@ input[type="submit"]{
     width: 20%;
     margin-bottom: 2rem;
     padding: 8px 25px;
+}
+
+.contact-forms{
+    width: 20rem;
+    height: 42rem;
+    background-color:#D0D0D0;
+    box-shadow: 5px 5px 10px 10px #69727C;
+}
+
+.contact-item{
+    width: 85%;
+    height: 30%;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    color: tomato;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item a{
+    text-decoration: none;
+}
+
+.contact-item a:visited{
+    color: tomato;
+}
+
+.fa-phone-alt, .fa-envelope, .fa-map-marker-alt{
+    font-size: 2.5rem;
+    color: turquoise;
+}
+
+
+/*media queries*/
+@media only screen and (max-width: 992px) {
+    .go-to-top-button{
+        margin-top: 3rem;
+    }
+
+    input[type="submit"]{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    input[type="submit"]{
+        padding-left: 1.5rem;
+    }
 }

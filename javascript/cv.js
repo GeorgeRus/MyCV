@@ -1,6 +1,8 @@
 const cvListItem = document.getElementsByClassName("cv-list-item");
 const highlightButton = document.getElementsByClassName("show-keywords")[0];
+const hideKeywords = document.getElementsByClassName("hide-keywords")[0];
 const keyword = document.getElementsByClassName("highlight");
+let keywords = Array.from(keyword);
 
 function toggleContent(){
     for(let i = 0; i < cvListItem.length; i++){
@@ -17,13 +19,22 @@ toggleContent();
 
 /*show keywords*/
 function showKeywords(){
-    let keywords = Array.from(keyword);
     keywords.forEach(word => {
         word.style.backgroundColor = "tomato";
         word.style.fontWeight = "900";
-    });
+    })
 }
+
+function removeKeywords(){
+    keywords.forEach(word => {
+        word.style.backgroundColor = "#BFCBC8";
+        word.style.fontWeight = "500";
+    })
+}
+
 highlightButton.addEventListener("click", showKeywords);
+hideKeywords.addEventListener("click", removeKeywords);
+
 
 /*dynamic progress bar-skills*/
 function fillProgressBar(item, index){

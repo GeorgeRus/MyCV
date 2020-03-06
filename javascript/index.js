@@ -1,7 +1,11 @@
 //show contacts
 const showContacts = document.getElementsByClassName("contacts")[0];
 const contacts = document.getElementsByClassName("contact")[0];
-showContacts.addEventListener("click", () => contacts.style.visibility = "visible");
+console.log(contacts);
+showContacts.addEventListener("click", () => {
+    contacts.style.visibility = "visible";
+});
+    
 
 //type effect
 const interest = document.getElementsByClassName("interest")[0];
@@ -14,7 +18,6 @@ function typeText() {
     if (index < textForInterests.length) {
         interest.innerHTML += textForInterests.charAt(index);
         index++;
-        //console.log(speed)
         if(timeOutId) {
             clearTimeout(timeOutId);
         }
@@ -39,7 +42,7 @@ function toggleOpen(){
 };
 
 function toggleActive(e){
-    console.log(e.propertyName); //linia asta ne arata comada afectata cand se face transitionend
+    console.log(e.propertyName); 
     if(e.propertyName.includes("flex")){
         this.classList.toggle("open-active");
     }
@@ -48,12 +51,3 @@ function toggleActive(e){
 panels.forEach(panel => panel.addEventListener("click", toggleOpen));
 panels.forEach(panel => panel.addEventListener("transitionend", toggleActive));
 
-//go to top button
-const goToTopButton = document.getElementsByClassName("go-to-top-button")[0];
-
-function goToTop(){
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
-goToTopButton.addEventListener("click", goToTop);

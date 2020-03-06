@@ -41,7 +41,7 @@
     background-color: #BFCBC8;
 }       
 
-.show-keywords{
+.show-keywords, .hide-keywords{
     width: 20rem;
     height: 4rem;
     margin-bottom: 2rem;
@@ -78,9 +78,10 @@
 }
 
 .progress{
-    height: 1.5rem;
-    width: 30rem;
+    height: 2rem;
+    width: 35rem;
     margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .language{
@@ -123,15 +124,22 @@
 /*media queries*/
 @media only screen and (max-width: 600px){
     .cv-content{
-        margin: 1rem 0.5rem;
+        margin: 5rem -1rem 5rem 4rem;
     }
+}
 
+@media only screen and (max-width: 992px) {
     .cv-left-text h1{
+        text-align: center;
         font-size: 1.2rem;
     }
 
     .cv-left-content{
         font-size: 1rem;
+    }
+
+    .cv-left-content a:hover{
+        transform: scale(1);
     }
 
     .list-item-content{
@@ -145,6 +153,12 @@
     .period{
         float: none;
     }
+
+    .progress{
+        height: 2rem;
+        width: 25rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
 }
 
-/*skills*/
