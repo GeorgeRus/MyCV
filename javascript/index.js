@@ -1,16 +1,5 @@
-//show contacts
-// const showContacts = document.getElementsByClassName("contacts")[0];
-// const contactItems = document.getElementsByClassName("contact")[0];
-// console.log(contactItems);
-// showContacts.addEventListener("click", () => {
-//     if(contactItems.style.display = "none"){
-//         console.log(true);
-//     }else{
-//         console.log(false);
-//     }
-// });
 
-//type effect
+//type effect for interest section
 const interest = document.getElementsByClassName("interest")[0];
 let index = 0;
 let textForInterests = "Check out my interests...";
@@ -36,16 +25,16 @@ function typeText() {
 
 typeText();
 
-//panels
+//panels 
 const panels = document.querySelectorAll(".panel");
-console.log(panels)
+//console.log(panels);
 
 function toggleOpen(){
     this.classList.toggle("open");
 };
 
 function toggleActive(e){
-    console.log(e.propertyName); 
+    //console.log(e.propertyName); 
     if(e.propertyName.includes("flex")){
         this.classList.toggle("open-active");
     }

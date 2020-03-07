@@ -1,3 +1,4 @@
+/*defining variables*/ 
 const modal = document.getElementsByClassName("modal");
 const openModalButton = document.getElementsByClassName("open-modal");
 const closeModalButton = document.getElementsByClassName("close-modal-button");

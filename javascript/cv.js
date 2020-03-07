@@ -1,3 +1,4 @@
+/*variables*/
 const cvListItem = document.getElementsByClassName("cv-list-item");
 const highlightButton = document.getElementsByClassName("show-keywords")[0];
 const hideKeywords = document.getElementsByClassName("hide-keywords")[0];
@@ -36,7 +37,7 @@ highlightButton.addEventListener("click", showKeywords);
 hideKeywords.addEventListener("click", removeKeywords);
 
 
-/*dynamic progress bar-skills*/
+/*loading skills dynamically*/
 function fillProgressBar(item, index){
     const progressPercentage = {
         0 : 90,

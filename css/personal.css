@@ -1,7 +1,8 @@
+/*styling the container*/
 .title{
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .projects-container{
@@ -11,6 +12,7 @@
     justify-content: space-around;
 }
 
+/*card item*/
 .card-item{
     width: 30rem;
     border-radius: 0.5rem;
@@ -101,6 +103,7 @@
     }
 }
 
+/*open modal button*/
 .open-modal:hover{
     transform: scale(1.05)!important;
     background-color: grey;
@@ -147,6 +150,17 @@
     height: 40rem;
 }
 
+.modal #calculator img, 
+.modal #weather-app img,
+.modal #booklist img{
+    width: 50%;
+    margin: auto;
+}
+
+.modal img{
+    box-shadow: 5px 5px 7px 7px #E9E7E6;
+}
+
 .buttons-container{
     align-self: center;
 }
@@ -168,6 +182,7 @@
     justify-content: center;
 }
 
+/*interests*/
 .interests-container{
     display: flex;
     flex-direction: column;
@@ -197,6 +212,7 @@
     transform: scale(1.05);
 }
 
+
 /*media queries*/
 @media only screen and (max-width: 768px) {
     .projects-container{
@@ -224,6 +240,14 @@
     .modal img{
         width: 100%;
         height: 18rem;
+    }
+
+    .modal #calculator img, 
+    .modal #weather-app img,
+    .modal #booklist img
+    {
+        width: 60%;
+        margin: auto;
     }
 
     .see-project-button, .close-modal-button{
@@ -261,6 +285,14 @@
         height: 28rem;
     }
 
+    .modal #calculator img, 
+    .modal #weather-app img,
+    .modal #booklist img
+    {
+        width: 60%;
+        margin: auto;
+    }
+
     .see-project-button, .close-modal-button{
         width: 10rem;
         height: 3rem;
@@ -279,6 +311,19 @@
 @media only screen and (max-width: 1200px) {
     .follow-side-bar{
         display: none;
+    }
+
+    .modal #calculator img
+    {
+        width: 60%;
+        margin: auto;
+    }
+
+    .modal #weather-app img,
+    .modal #booklist img
+    {
+        width: 70%;
+        margin: auto;
     }
 }
 

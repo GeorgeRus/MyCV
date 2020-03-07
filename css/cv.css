@@ -1,19 +1,15 @@
-
+/*styling the main component, cv*/
 .cv-content{
     margin: 15rem 0rem;
     box-shadow: 5px 5px 10px 10px #E9E7E6;
     line-height: 2rem;
 }
 
+/*left side of the cv*/
 .cv-left-content{
     background-color: #6D7070;
     color: blanchedalmond;
     font-size: 2rem;
-}
-
-.list-item-content {
-    margin-left: 2rem;
-    display: none;
 }
 
 .cv-left-text h1{
@@ -37,9 +33,10 @@
     color: blanchedalmond;
 }
 
+/*right side of the cv*/
 .cv-right-content{
     background-color: #BFCBC8;
-}       
+} 
 
 .show-keywords, .hide-keywords{
     width: 20rem;
@@ -50,6 +47,11 @@
 .period {
     font-style: italic;
     float: right;
+}
+
+.list-item-content {
+    margin-left: 2rem;
+    display: none;
 }
 
 .cv-list-item{
@@ -77,6 +79,7 @@
     font-weight: bold;
 }
 
+/*languages and skills*/
 .progress{
     height: 2rem;
     width: 35rem;

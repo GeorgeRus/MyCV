@@ -1,3 +1,4 @@
+/*defining variables*/
 const formElement = document.getElementsByClassName("form-element")[0];
 const firstName = document.getElementById("fname");
 const lastName = document.getElementById("lname");
@@ -6,7 +7,7 @@ const message = document.getElementById("message");
 const submitMessage = document.getElementsByClassName("submit-message")[0];
 const submitButton = document.getElementById("submit-btn");
 const contactItems = document.getElementsByClassName("contact-forms")[0];
-const URL = "https://formspree.io/xrgbelll";
+const URL = "https://formspree.io/xdozverr";
 
 submitButton.addEventListener("click", (event) => {
     event.preventDefault();

@@ -2,6 +2,7 @@
     display: none;
 }
 
+/*styling form component*/
 .form-container{
     margin: 0rem;
 }
@@ -24,10 +25,6 @@
     font-size: 2rem;
 }
 
-.fa-envelope-open-text{
-    padding-right: 1rem;
-}
-
 .form-element input, .form-element textarea{
     width: 80%;
     height: 3.5rem;
@@ -47,6 +44,14 @@
     color: gray;
 }
 
+.fa-envelope-open-text{
+    padding-right: 1rem;
+}
+
+.fa-envelope-open-text:hover{
+    transform: scale(1.1);
+}
+
 .hide-message{
     display: none;
 }
@@ -57,6 +62,7 @@ input[type="submit"]{
     padding: 8px 25px;
 }
 
+/*Contact items*/
 .contact-forms{
     width: 20rem;
     height: 42rem;
@@ -95,6 +101,7 @@ input[type="submit"]{
     filter: brightness(0.95);
 }
 
+
 /*animation for contacts*/
 .contact-forms{
     -webkit-animation-name: slide-in-right;
@@ -130,6 +137,7 @@ input[type="submit"]{
         transform: none;
     }
 }
+
 
 /*media queries*/
 @media only screen and (max-width: 992px) {
