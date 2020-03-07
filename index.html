@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My CV</title>
+    <link rel="icon" href="" type="logo">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome/css/all.css">
     <!-- Latest compiled and minified CSS -->
@@ -39,53 +40,70 @@
         <section>
             <div class="presentation">
                 <div class="about-me row d-flex justify-content-around align-items-center">
-                    <div class="my-datas col-md-6">
-                        <div>
+                    <div class="border-shadow upper-border-shadow"></div>
+                    <div class="my-datas  col-md-6">
                             <div class="message">Hello, I am</div>
                             <h2>George Rus</h2>
-                            <p>Front-End Development Student</p>
-                            <button class="contacts generic-button">Contact me</button> <!--aici la click va fi afisat linkedin0ul, nr de tel, restul-->
+                            <h2>Front-End Development Student</h2>
+                            <div class="front-end-subjects d-flex justify-content-between">
+                                <div class="front-end-item">
+                                    <i class="fab fa-html5"></i>
+                                    <p>HTML5</p>
+                                </div>
+                                <div class="front-end-item">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <p>CSS5</p>
+                                </div>
+                                <div class="front-end-item">
+                                    <i class="fab fa-js-square"></i>
+                                    <p>JS</p>
+                                </div>
+                                <div class="front-end-item">
+                                    <i class="fab fa-react"></i>
+                                    <p>REACT</p>
+                                </div>
+                            </div>
+                            <div class="message message-for-contacts">Contact me</div>
                             <div class="contact d-flex justify-content-between align-items-center">
                                 <span><a href="#"><i class="fas fa-phone-alt"></i>+4 074 9666 924</a></span>
                                 <span><a href="https://www.facebook.com/geo.rus.5"><i class="fab fa-facebook-f"></i></a></span>
                                 <span><a href="https://www.linkedin.com/in/george-rus-9060b1156/"><i class="fab fa-linkedin-in"></i></a></span>
                                 <span><a href="https://github.com/GeorgeRus"><i class="fab fa-github"></i></a></span>
                             </div>
-                        </div>
                     </div>
                     <div class="photo col-md-6 text-right">
-                        <img src="/imagini/1.jpg" alt="my-photo">
+                        <img src="/imagini/my-photo-first-page.jpg" alt="my-photo">
                     </div>
+                    <div class="border-shadow"></div>
                 </div>
                 <div class="about-me row d-flex justify-content-around align-items-center">
-                    <div class="my-datas col-md-6">
-                        <div>
-                            <h2>Some words about me..</h2>
+                    <div class="my-datas my-datas-translate-bottom col-md-12">
+                            <h2 class="message message-about-me">Some words about me..</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla in illo laborum repudiandae corporis praesentium perferendis. Animi ducimus excepturi perferendis similique enim, reprehenderit laboriosam labore temporibus doloremque quibusdam modi aperiam?</p>
-                        </div>
                     </div>
-                    <div class="photo col-md-6 text-right">
+                    <!-- <div class="photo col-md-6 text-right">
                         <img src="/imagini/programming-img.jpg" alt="my-photo">
-                    </div>
+                    </div> -->
+                    <div class="border-shadow"></div>
                 </div>
             </div>
         </section>
 
         <div class="interest"></div>
-        <section class="panels">
+        <section class="panels-interest">
                 <div class="panel panel1">
                     <p>Front-End</p>
-                    <p>Web Development</p>
+                    <p><span>Web Development</span></p>
                     <p>Back-end</p>
                 </div>
                 <div class="panel panel2">
                     <p>Web</p>
-                    <p>Design</p>
+                    <p><span>Design</span></p>
                     <p>Mechanical</p>
                 </div>
                 <div class="panel panel3">
                     <p>3D Modelling</p>
-                    <p>Mechanical Engineering</p>
+                    <p><span>Mechanical Engineering</span></p>
                     <p>Design</p>
                 </div>
         </section>
@@ -100,7 +118,7 @@
         </div>
 
         <footer>
-            <div class="footer-items row d-flex justify-content-center">
+            <div class="footer-items row d-flex justify-content-center align-items-center">
                 <a href="https://www.facebook.com/geo.rus.5"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://www.linkedin.com/in/george-rus-9060b1156/"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/GeorgeRus"><i class="fab fa-github"></i></a>

@@ -128,7 +128,17 @@
     }
 }
 
+@media only screen and (max-width: 768px){
+    .cv-content{
+        margin: 5rem -1rem 5rem 4rem;
+    }
+}
+
 @media only screen and (max-width: 992px) {
+    .cv-content{
+        margin: 5rem -1rem 5rem 4rem;
+    }
+    
     .cv-left-text h1{
         text-align: center;
         font-size: 1.2rem;
@@ -159,6 +169,12 @@
         width: 25rem;
         margin-bottom: 1rem;
         font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .cv-content{
+        margin: 5rem -1rem 5rem 4rem;
     }
 }
 

@@ -1,11 +1,14 @@
 //show contacts
-const showContacts = document.getElementsByClassName("contacts")[0];
-const contacts = document.getElementsByClassName("contact")[0];
-console.log(contacts);
-showContacts.addEventListener("click", () => {
-    contacts.style.visibility = "visible";
-});
-    
+// const showContacts = document.getElementsByClassName("contacts")[0];
+// const contactItems = document.getElementsByClassName("contact")[0];
+// console.log(contactItems);
+// showContacts.addEventListener("click", () => {
+//     if(contactItems.style.display = "none"){
+//         console.log(true);
+//     }else{
+//         console.log(false);
+//     }
+// });
 
 //type effect
 const interest = document.getElementsByClassName("interest")[0];

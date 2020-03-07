@@ -3,7 +3,7 @@ const firstName = document.getElementById("fname");
 const lastName = document.getElementById("lname");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
-const submitMessage = document.getElementsByClassName("submit-result-message")[0];
+const submitMessage = document.getElementsByClassName("submit-message")[0];
 const submitButton = document.getElementById("submit-btn");
 const contactItems = document.getElementsByClassName("contact-forms")[0];
 const URL = "https://formspree.io/xrgbelll";
@@ -43,16 +43,16 @@ function sendEmail(URL, userData){
 
 function displaySubmitErrorMessage(){
     submitMessage.classList.remove("hide-message");
-    submitMessage.classList.add("show-submit-message");
-    submitMessage.innerHTML = "All fields must be completed!"
-    //contactItems.style.height = "480.6px";
+    submitMessage.innerHTML = "All fields must be completed!";
+    contactItems.style.height = "480.6px";
 }
 
 function displaySubmitSuccsesMessage(){
-    submitMessage.classList.add("show-submit-message");
+    submitMessage.classList.remove("hide-message");
     submitMessage.innerHTML = "Your message was sent!"
     submitMessage.style.color = "green";
-    //contactItems.style.height = "480.6px";
+    submitMessage.style.display = "block";
+    contactItems.style.height = "480.6px";
 }
 
 function clearFields(){
@@ -63,11 +63,7 @@ function clearFields(){
 }
 
 function removeMessage(){
-    submitMessage.classList.add("hide-message");
-    // if(formElement.clientHeight < 480.6){
-    //     contactItems.style.height = "42rem";
-    // }else{
-    //     contactItems.style.height = "";
-    // }
+    submitMessage.style.display = "none";
+    contactItems.style.height = "42rem";
 }
 

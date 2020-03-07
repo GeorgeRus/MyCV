@@ -19,12 +19,13 @@ a:hover{
 }
 
 .CONTAINER{
-    position: relative;
+    /* position: relative; */
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
+/*navbar*/
 .navbar{
     background-color: rgba(126, 128, 130, 0.8)!important;
     border-bottom: 2px solid rgba(80, 112, 92, 0.4);
@@ -54,6 +55,7 @@ a:hover{
     transition: width .3s;
 }
 
+/*main content*/
 .presentation{
     width: 100%;
 }
@@ -94,21 +96,30 @@ a:hover{
 }
 
 .photo img{
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     margin-bottom: 1rem;
-    border: 10px solid #BDC9D6;
+    box-shadow: 1px 1px 5px 5px tomato;
+    border: 3px solid #BDC9D6;
     border-radius: 50%;
     transition: 3s;
 }
 
 .photo img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .about-me{
-    margin: 5rem 14rem;
-    border-bottom: 1px solid turquoise;
+    margin: 2rem 20rem;
+    padding-bottom: 1rem;
+}
+
+.my-datas h2{
+    margin: 1.5rem 0rem;
+}
+
+.my-datas p{
+    text-align: justify;
 }
 
 .my-datas{
@@ -149,14 +160,54 @@ a:hover{
 
 .message{
     width: 15rem;
-    margin: 1rem 0rem;
+    margin: 0.5rem 0rem;
     font-size: 2rem;
     background-color: #7E8082;
     color: turquoise;
     text-align: center;
     padding: 1rem;
-    border-top-left-radius: 100% 0.5rem;
-    border-bottom-right-radius: 100% 0.5rem;
+    border-top-right-radius: 2.5rem;
+}
+
+.front-end-subjects{
+    width: 60%;
+}
+
+.front-end-item{
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.front-end-item p{
+    font-size: 2rem;
+}
+
+.fa-html5{
+    color: blue;
+}
+
+.fa-css3-alt{
+    color: tomato;
+}
+
+.fa-js-square{
+    color: yellow;
+}
+
+.fa-react{
+    color: turquoise;
+}
+
+.fab{
+    filter: grayscale(0.3);
+}
+
+.front-end-item:hover{
+    transform: scale(1.2);
+    filter: brightness(1);
 }
 
 .generic-button{
@@ -170,13 +221,16 @@ a:hover{
     border-radius: 2px;
 }
 
-.contacts-hidden{
-    visibility: hidden;
+.generic-button:hover{
+    box-shadow: 1px 1px 2px 2px turquoise;
+}
+
+.message-for-contacts{
+    width: 20rem;
 }
 
 .contact{
     height: 5rem;
-    visibility: hidden;
 }
 
 .contact span a{
@@ -200,6 +254,21 @@ a:hover{
     transition: color 2s;
 }
 
+.message-about-me{
+    width: 25rem;
+}
+
+.upper-border-shadow{
+    margin-bottom: 3rem;
+}
+.border-shadow{
+    width: 97%;
+    height: 2px;
+    margin-top: 1rem;
+    background-color: turquoise;
+    box-shadow: 0.5px 0.5px 2px 2px tomato;
+}
+
 /*interests*/
 .interest{
     text-align: center;
@@ -208,8 +277,8 @@ a:hover{
 }
 
 /*panels*/
-.panels{
-    width: 80%;
+.panels-interest{
+    width: 75%;
     min-height: 75vh;
     margin: 5rem;
     box-shadow: 5px 5px 10px 10px #E9E7E6;;
@@ -265,11 +334,12 @@ a:hover{
     align-items: center;
     flex-grow: 1;
     transition: transform 0.5s; 
+    color: tomato;
 }
 
 .panel p:first-child{ 
     transform: translateY(-100%);
-    color: tomato;
+    color: turquoise;
 }
 
 .panel.open-active p:first-child{
@@ -277,7 +347,7 @@ a:hover{
 }
 .panel p:last-child{
     transform: translateY(100%);
-    color: tomato;
+    color: turquoise;
 }
 
 .panel.open-active p:last-child{
@@ -289,11 +359,12 @@ a:hover{
     font-size: 5rem;
 }
 
-.go-to-top-button{
-    align-self: center;
-    margin-bottom: 5rem;
-}
+/* .panel span{
+    background-color: #7E8082;
+    text-shadow: 1px 1px 2px 2px solid tomato;
+} */
 
+/*contacts, side bar*/
 .follow-side-bar{
     width: 40rem;
     height: 5rem;
@@ -326,19 +397,164 @@ a:hover{
     background-color:blanchedalmond;
 }
 
+/*go to top button*/
+.go-to-top-button{
+    align-self: center;
+    margin-bottom: 5rem;
+}
+
 /*footer*/
 .footer-items{
-    height: 5rem;
+    height: auto;
     margin: 0rem;
     background-color: rgba(126, 128, 130, 0.8)!important;
     border-top: 2px solid rgba(80, 112, 92, 0.4)
 }
 
 .footer-items a{
-    padding: 2rem;
+    font-size: 2rem;
+    padding: 1rem 4rem;
     color: turquoise;
 }
 
 .footer-items a:visited{
     color: turquoise;
 }
+
+/*media queries*/
+@media only screen and (max-width: 1200px){
+    .front-end-subjects{
+        width: 80%;
+    }
+
+    .front-end-item{
+        font-size: 2rem;
+    }
+
+    .front-end-item p{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .about-me{
+        margin: 2rem 6rem;
+        padding-bottom: 1rem;
+        text-align: center!important;
+    }
+
+    .contact{
+        width: 100%;
+    }
+
+    .photo img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .my-datas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .my-datas p{
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-link:hover::after {
+        width: 10%;
+        transition: width .3s;
+        margin: auto;
+    }
+
+    .about-me{
+        margin: 2rem 4.5rem;
+        padding-bottom: 1rem;
+        text-align: center!important;
+    }
+    
+    .about-me .photo{
+        text-align: center!important;
+    }
+
+    .my-datas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-datas .contact{
+        margin-bottom: 2rem;
+    }
+
+    .my-datas p{
+        text-align: justify;
+        margin-bottom: 2rem;
+    }
+
+    .photo img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .front-end-subjects{
+        width: 80%;
+    }
+
+    .contact{
+        width: 90%;
+    }
+
+    .interest{
+        font-size: 2rem;
+    }
+
+    .panels-interest{
+        min-height: 35vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .panel p{
+        font-size: 1.5rem;
+    }
+
+    .panel p:first-child{ 
+        transform: translateX(-100%);
+        color: turquoise;
+    }
+    
+    .panel.open-active p:first-child{
+        transform: translateX(0);
+    }
+    .panel p:last-child{
+        transform: translateX(100%);
+        color: turquoise;
+    }
+    
+    .panel.open-active p:last-child{
+        transform: translateX(0);
+    }
+
+    .border-shadow{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .nav-link:hover::after {
+        width: 15%;
+        transition: width .3s;
+        margin: auto;
+    }
+
+    .contact{
+        width: 90%;
+    }
+}
+
