@@ -23,7 +23,7 @@ window.onclick = () => {
 }))}
 
 //set random color when the mouse is over a div
-[...myInterests].forEach(interes=> interes.addEventListener("mouseover", () =>{
+[...myInterests].forEach(interes => interes.addEventListener("mouseover", () =>{
     const colorsToSet = ["#574444 ", "#7B0A0A", "#FF4F23", "#EA3DD5", "#8085F0", "#581845", "#000000", "#192B19", "#24295A", "#CF6DDA"];
     const setRandomColor = () => {
         randomIndex = Math.floor(Math.random() * colorsToSet.length);

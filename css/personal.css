@@ -32,6 +32,10 @@
     height: 30rem;
 }
 
+#calculator img{
+    width: 24rem;
+}
+
 /*animation for projects*/
 .translate-top{
     -webkit-animation-name: slide-in-top;
@@ -233,8 +237,8 @@
     }
 
     .modal-content{
-        width: 80%;
-        height: 30rem;
+        width: 90%;
+        height: 26rem;
     }
 
     .modal img{
