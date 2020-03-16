@@ -507,11 +507,16 @@ a:hover{
         width: 90%;
     }
 
+    .contact span a{
+        font-size: 1.25rem;
+    }
+
     .interest{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .panels-interest{
+        width: 70%;
         min-height: 35vh;
         display: flex;
         flex-direction: column;
@@ -552,6 +557,37 @@ a:hover{
 
     .contact{
         width: 90%;
+    }
+
+    .front-end-subjects{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .front-end-item{
+        font-size: 2rem;
+    }
+
+    .follow-side-bar{
+        width: 40rem;
+        height: 3.5rem;
+        left: -19rem;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .follow-side-bar span a .fab,
+    .follow-side-bar span a .fas{
+        padding-bottom: 1rem;
+    }
+
+    .follow-side-bar span a:hover{
+        background-color: transparent;
+    }
+
+    .follow-side-bar .fa-phone-alt{
+        font-size: 1.4rem;
     }
 }
 

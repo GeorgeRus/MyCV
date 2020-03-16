@@ -10,6 +10,8 @@ const interestsTitle = document.getElementsByClassName("interests-title")[0];
 const openModalButtons = [...openModalButton];
 openModalButtons.forEach((openButton, index) => openButton.addEventListener("click", () => {
     [...modal][index].style.display = "block";
+    const jsPic = document.getElementById("js-picture");
+    jsPic.classList.add("modal-above");
 }));
 
 const closeModalButtons = [...closeModalButton];
