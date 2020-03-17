@@ -1,4 +1,8 @@
 /*styling the container*/
+body{
+    overflow: auto;
+}
+
 .title{
     display: flex;
     justify-content: center;
@@ -181,6 +185,10 @@
     color: turquoise;
 }
 
+.see-project-button a {
+    color: turquoise;
+}
+
 .go-to-top-container{
     display: flex;
     justify-content: center;
@@ -217,6 +225,7 @@
 }
 
 
+
 /*media queries*/
 @media only screen and (max-width: 1200px) {
     .follow-side-bar{
@@ -234,10 +243,6 @@
     {
         width: 70%;
         margin: auto;
-    }
-
-    .see-project-button a {
-        color: turquoise;
     }
 }
 

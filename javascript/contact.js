@@ -9,7 +9,7 @@ const submitButton = document.getElementById("submit-btn");
 const contactItems = document.getElementsByClassName("contact-forms")[0];
 const URL = "https://formspree.io/xdozverr";
 
-submitButton.addEventListener("click", (event) => {
+submitButton.addEventListener("click", event => {
     event.preventDefault();
     if(!firstName.value || !lastName.value || !email.value || !message.value){
         displaySubmitErrorMessage();
