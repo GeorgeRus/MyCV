@@ -20,7 +20,7 @@ closeModalButtons.forEach((closeButton, index) => closeButton.addEventListener("
 }))
 
 window.onclick = () => {
-    [...modal].forEach( modalItem => modalItem.addEventListener("click", () =>{
+    [...modal].forEach(modalItem => modalItem.addEventListener("click", () =>{
         modalItem.style.display = "none";
 }))}
 
@@ -36,7 +36,7 @@ window.onclick = () => {
     interestsTitle.style.color = setRandomColor();
 }));
 
-[...myInterests].forEach((interes) => interes.addEventListener("mouseleave", () =>{
+[...myInterests].forEach(interes => interes.addEventListener("mouseleave", () =>{
     interes.style.backgroundColor = "grey";
     interestsTitle.style.color = "black";
 }))
