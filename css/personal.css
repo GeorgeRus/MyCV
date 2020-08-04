@@ -19,6 +19,7 @@ body{
 /*card item*/
 .card-item{
     width: 30rem;
+    margin: 5rem;
     border-radius: 0.5rem;
     background-color: rgba(225, 219, 219, 0.5);
     box-shadow: 5px 5px 10px 10px #E9E7E6;
@@ -254,6 +255,7 @@ body{
     
     .card-item{
         margin-bottom: 2rem;
+        margin: 0;
     }
 
     .modal-content{

@@ -38,7 +38,6 @@ body{
     width: 0;
     height: 4px;
     background: turquoise;
-    transition: width .3s;
 }
 
 .nav-link:hover::after {
@@ -173,7 +172,6 @@ a:hover{
     font-size: 2rem;
     color: tomato;
     text-decoration: none;
-    animation-name: changeColor;
     animation-duration: 2s;
 }
 
@@ -273,12 +271,6 @@ a:hover{
     display: flex;
     align-self: center;
     color: turquoise;
-}
-
-.panel1, .panel2, .panel3, .panel4, .panel5{
-    background-repeat: none;
-    background-size: cover;
-    background-position: center;
 }
 
 .panel1{
@@ -588,6 +580,10 @@ a:hover{
 
     .follow-side-bar .fa-phone-alt{
         font-size: 1.4rem;
+    }
+
+    footer a {
+        padding: 1rem 1rem;
     }
 }
 

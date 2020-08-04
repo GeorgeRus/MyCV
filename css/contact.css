@@ -2,6 +2,13 @@
     display: none;
 }
 
+/* .contact-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
 /*styling form component*/
 .form-container{
     margin: 0rem;

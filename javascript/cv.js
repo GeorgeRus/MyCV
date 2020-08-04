@@ -59,7 +59,7 @@ function fillProgressBar(item, index, progressPercentage){
             if (progressIncrement >= progressPercentage[index]) {
                 clearInterval(id);
                 actualProgress = 0;
-            }else {
+            }else{
                 progressIncrement++;
                 progressElement.style.width = progressIncrement + "%";
                 progressElement.innerHTML = progressIncrement + "%";

@@ -10,8 +10,8 @@ const interestsTitle = document.getElementsByClassName("interests-title")[0];
 const openModalButtons = [...openModalButton];
 openModalButtons.forEach((openButton, index) => openButton.addEventListener("click", () => {
     [...modal][index].style.display = "block";
-    const jsPic = document.getElementById("js-picture");
-    jsPic.classList.add("modal-above");
+    // const jsPic = document.getElementById("js-picture");
+    // jsPic.classList.add("modal-above");
 }));
 
 const closeModalButtons = [...closeModalButton];
@@ -19,8 +19,9 @@ closeModalButtons.forEach((closeButton, index) => closeButton.addEventListener("
     [...modal][index].style.display = "none";
 }))
 
+//when pressing click outside the modal, it will be closed
 window.onclick = () => {
-    [...modal].forEach(modalItem => modalItem.addEventListener("click", () =>{
+    [...modal].forEach(modalItem => modalItem.addEventListener("click", () => {
         modalItem.style.display = "none";
 }))}
 

@@ -38,7 +38,7 @@ function sendEmail(URL, userData){
         body : JSON.stringify(userData)
     }
 
-    fetch(URL, obj).then(response => response.json())
+    fetch(URL, obj).then(response => response.json());
     clearFields();
 }
 

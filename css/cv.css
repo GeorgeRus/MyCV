@@ -231,3 +231,13 @@
     }
 }
 
+.cv-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cv-content{
+    margin: 2rem -1rem 2rem 4rem;
+}
